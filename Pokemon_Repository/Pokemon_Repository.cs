@@ -51,7 +51,7 @@ namespace Pokemon_Repository
             {
                 if(p.PokemonNickName == nickName)
                 {
-                    return p;
+                    _pokemonTeam[_pokemonTeam.IndexOf(p)] = newPokemon;
                 }
             }
             return null;

@@ -62,7 +62,7 @@ namespace Pokemon_Console
         }
         private void SeeMyPokemonTeam()
         {
-            List<Pokemon> pokemonTeam = _repo.GetPokemonTeam();
+            List<Pokemon> pokemonTeam = _Repo.GetPokemonTeam();
             if (pokemonTeam.Count == 0)
             {
                 Console.WriteLine("Your Team is empty!");
@@ -86,7 +86,7 @@ namespace Pokemon_Console
         }
         private void AddPokemonToTeam()
         {
-            List<Pokemon> pokemonTeam = _repo.GetPokemonTeam();
+            List<Pokemon> pokemonTeam = _Repo.GetPokemonTeam();
             if (pokemonTeam.Count >= 6)
             {
                 Console.WriteLine("You already have 6 Pokemon on your team! You cant hold more than that! Please Remove a Pokemon first!");
@@ -163,7 +163,7 @@ namespace Pokemon_Console
 
 
                     Pokemon newPokemon = new Pokemon(species, name, level, typeOne, typeTwo, moveOne, moveThree, moveFour);
-                    _repo.AddPokemonToTeam(newPokemon);
+                    _Repo.AddPokemonToTeam(newPokemon);
                     Console.WriteLine("Pokemon added!");
                     Console.ReadKey();
 

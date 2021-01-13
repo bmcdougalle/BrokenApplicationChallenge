@@ -39,6 +39,7 @@ namespace Pokemon_Repository
         public string MoveThree { get; set; }
         public string MoveFour { get; set; }
 
+        public Pokemon() { }
         public Pokemon(string speciesName, int teamPosition,  string nickName, int level, PokemonType pokemonType, PokemonType secondaryType, string moveOne, string moveTwo, string moveThree, string moveFour)
         {
             TeamPosition = teamPosition;
